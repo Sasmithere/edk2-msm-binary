@@ -1,0 +1,423 @@
+.text
+`.data
+.reloc
+*aH9J
+*(A@
+RB48
+RBT9
+(6($A
+_8(hi8
+T.<C
+(1H9h
+RBp>
+RBp>
+?! k
+*A}@
+T_,@
+2	"@
+!@9K
+4b"@9_0
+Tjb@9K
+Ro"@9
+b"@94yb
+4b"@9!
+2b"@9
+k"@9
+@9J!
+*B=@
+@9)!
+Ayl!
+-ij8
+[9*}
+@9!|;
+@9		
+"@9`
+R@9lF
+BA9o
+h&@9
+@9(Q
+@9GQ
+Q	*h9
+3ju@
+@9	@
+@9j)
+@9(!
+@9j 
+4T	@
+@9Cio
+4(M"
+TjbF9K
+obF9
+@9(!
+rDyb
+r)	@
+1G9*
+	1G9
+,cA9
+SMi/
+n1G9n
+fF@9i
+2Hi)
+2li)
+@9-9
+	2G9i
+@9`R@yc.@
+@9 8
+@9!8
+	AzA	
+T	/Ay?
+jh8h
+@9"]
+@9c]
+)k{8
+@9d\
+@9@\
+*@9%=
+.@9cd!
+hzixH
+hz)x)
+RBX;
+RB4<
+RBP=
+RB$>
+ASSERT_EFI_ERROR (Status = %r)
+DriverEntryPoint.c
+!EFI_ERROR (Status)
+GpiDxe
+AutoGen.c
+GpiEntryPoint: Installing Gpi protocol interface failed, Status = (0x%p)
+DebugLib.c
+Format != ((void *) 0)
+ASSERT %a +%d: %a
+Buffer != ((void *) 0)
+String.c
+Destination != ((void *) 0)
+((UINTN) Destination & 0x00000001) == 0
+Source != Destination
+(UINTN) ( (Destination + Length + 1) < Source )
+(UINTN) ( (Source + Length + 1) < Destination )
+(UINTN) ( (Destination + Length) < Source)
+(UINTN) ( (Source + StrLen(Source)) < Destination )
+Length <= _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+String != ((void *) 0)
+((UINTN) String & 0x00000001) == 0
+Length < _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+StrSize (FirstString) != 0
+StrSize (SecondString) != 0
+StrSize (Destination) != 0
+StrSize (String) != 0
+StrSize (SearchString) != 0
+StrSize (Source) != 0
+(UINTN) ((CHAR8*) Source != (CHAR8*) Destination)
+(UINTN) ( (Destination + Length + 1) < ( (CHAR8*)Source ) )
+(UINTN) ( (CHAR8*) (Source + Length + 1) < Destination )
+*Source < 0x100
+AsciiStrSize (ReturnValue) != 0
+(UINTN) ( (Destination + Length) < Source )
+(UINTN) ( (Source + Length) < Destination )
+Length <= _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+Length < _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+AsciiStrSize (FirstString)
+AsciiStrSize (SecondString)
+AsciiStrSize (Destination) != 0
+AsciiStrSize (String) != 0
+AsciiStrSize (SearchString) != 0
+AsciiStrSize (Source) != 0
+(UINTN) ((CHAR8 *) Destination - Source) > AsciiStrLen (Source)
+(UINTN) (Source - (CHAR8 *) Destination) >= (AsciiStrSize (Source) * sizeof (CHAR16))
+StrSize (ReturnValue) != 0
+Value < 100
+Value < 0xa0
+(Value & 0xf) < 0xa
+SafeString.c
+((UINTN) Source & 0x00000001) == 0
+(Destination != ((void *) 0))
+(Source != ((void *) 0))
+(DestMax <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+(DestMax != 0)
+(DestMax > SourceLen)
+InternalSafeStringNoStrOverlap (Destination, DestMax, (CHAR16 *)Source, SourceLen + 1)
+(Length <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+(CopyLen != 0)
+(CopyLen > SourceLen)
+(String != ((void *) 0))
+(Data != ((void *) 0))
+(StrnLenS (String, (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+(Address != ((void *) 0))
+AddressIndex + 1 < (sizeof (Address->Addr) / sizeof ((Address->Addr)[0]))
+(Guid != ((void *) 0))
+(Buffer != ((void *) 0))
+((Length & 0x00000001) == 0)
+(MaxBufferSize >= Length / 2)
+(DestMax <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+InternalSafeStringNoAsciiStrOverlap (Destination, DestMax, (CHAR8 *)Source, SourceLen + 1)
+(Length <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+(AsciiStrnLenS (String, (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+!InternalSafeStringIsOverlap (Destination, DestMax, (void *)Source, (SourceLen + 1) * sizeof(CHAR16))
+(DestinationLength != ((void *) 0))
+!InternalSafeStringIsOverlap (Destination, DestMax * sizeof(CHAR16), (void *)Source, SourceLen + 1)
+RShiftU64.c
+Count < 64
+MemLibGuid.c
+DestinationGuid != ((void *) 0)
+SourceGuid != ((void *) 0)
+Guid1 != ((void *) 0)
+Guid2 != ((void *) 0)
+((UINTN)Buffer & (sizeof (Guid->Data1) - 1)) == 0
+Length <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)Buffer + 1)
+(Length & (sizeof (*GuidPtr) - 1)) == 0
+Guid != ((void *) 0)
+ZeroMemWrapper.c
+CopyMemWrapper.c
+(Length - 1) <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)DestinationBuffer)
+(Length - 1) <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)SourceBuffer)
+DevicePathUtilities.c
+DevicePath != ((void *) 0)
+Node != ((void *) 0)
+(Length >= sizeof (EFI_DEVICE_PATH_PROTOCOL)) && (Length < 0x00010000)
+Size != ((void *) 0)
+UefiBootServicesTableLib.c
+gImageHandle != ((void *) 0)
+gST != ((void *) 0)
+gBS != ((void *) 0)
+UefiRuntimeServicesTableLib.c
+gRT != ((void *) 0)
+UefiLib.c
+TableGuid != ((void *) 0)
+Table != ((void *) 0)
+ProtocolGuid != ((void *) 0)
+NotifyFunction != ((void *) 0)
+Registration != ((void *) 0)
+Name != ((void *) 0)
+NotifyTpl <= 31
+Lock != ((void *) 0)
+Priority <= 31
+Lock->Lock == EfiLockReleased
+Lock->Lock != EfiLockUninitialized
+Lock->Lock == EfiLockAcquired
+Name != ((void *) 0) && Guid != ((void *) 0) && Value != ((void *) 0)
+*Value != ((void *) 0)
+SupportedLanguages != ((void *) 0)
+DxeServicesTableLib.c
+gDS != ((void *) 0)
+HobLib.c
+mHobList != ((void *) 0)
+HobStart != ((void *) 0)
+((BOOLEAN)(0==1))
+ArmArchTimerLib.c
+(_gPcd_FixedAtBuild_PcdArmArchTimerFreqInHz/1000000U)
+ArmGenericTimerGetTimerFreq () != 0
+ARM Architectural Timer is not available in the CPU, hence this library cannot be used.
+PageAttributeToGcdAttribute: PageAttributes:0x%lX not supported.
+ArmMmuLibCore.c
+MemoryTable != ((void *) 0)
+ArmConfigureMmu: The MaxAddress 0x%lX is not supported by this MMU configuration.
+TranslationTableAttribute == ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK || TranslationTableAttribute == ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK_XN || TranslationTableAttribute == ARM_MEMORY_REGION_ATTRIBUTE_NONSECURE_WRITE_BACK
+!EFI_ERROR (((RETURN_STATUS)(0x8000000000000000ULL | (2))))
+WARN: Not BBM Safe Region: 0x%x
+(T0SZ != ((void *) 0)) && (TableEntryCount != ((void *) 0))
+TopBit != 0
+UncachedMemoryAllocationLib.c
+(Alignment & (Alignment - 1)) == 0
+AllocationSize <= (0xFFFFFFFFFFFFFFFFULL - (UINTN) Buffer + 1)
+XN: 0x%016lx--0x%016lx [Failed]
+iface_reg - ERR - NULL parameters!
+iface_reg - ERR - GSI not ready!
+iface_reg - ERR - wrong params!
+iface_reg - ERR - GPII-%d registered!
+iface_reg - Allocating GPII-%d
+iface_reg - ERR - GPII-%d alloc
+iface_reg - ERR - set params!
+iface_reg - ERR - gpii-%d init failed!
+iface_reg - GPII-%d register DONE!
+iface_dereg - ERR - bad params!
+iface_active - ERR - bad params!
+iface_active - ERR - gpii-%d not reg!
+gpi_iface_active - gpii ID: %d, bmsk: %d, active: %d
+iface_in_irq_mode - ERR - bad params!
+iface_in_irq_mode - ERR - GSI not ready!
+iface_set_irq_mode - ERR - bad params!
+iface_set_irq_mode - ERR - GPII-%d not ready!
+query_chan_status - ERR - bad params!
+query_chan_status - ERR - GPII-%d not ready!
+query_chan_status - ERR - Inv chan state: %d!
+iface_poll - ERR - bad params!
+iface_poll - ERR - GPII-%d not ready!
+iface_poll - ERR - GPII-%d IRQ mode!
+issue_cmd - ERR - bad params!
+issue_cmd - ERR - GSI not ready for GPII-%d!
+process_tre - ERR - bad params!
+process_tre - ERR - GPII-%d bad chan: %d!
+process_tre - ERR - GPII-%d wp out of sync!
+process_tre - ERR - GPII-%d not ready!
+process_tre - ERR - GPII-%d chan-%d state: %d!
+process_tre - ERR - gpii-%d chan-%d, no space for %d TRE's!
+/core/hwengines/gpi
+init_tgt_info - ERR - GetDALPropertyHandle fail!
+tgt_gpi_config
+init_tgt_info - ERR - GetPropertyValue fail!
+init_tgt_info - ERR - NULL ptr!
+fwload - ERR - fail!
+init_all - ERR - tgt init fail!
+init_all - ERR - common init fail!
+gpii_malloc - out of memory!
+er_malloc - out of ER memory!
+issue_cmd - ERR - cmd: %d not allowed for event rings
+issue_cmd - ERR - pending command: %d for GPII-%d
+issue_cmd - ERR - CMD_ALLOCATE, curr state: %d
+issue_cmd - ERR - CMD_START, curr state: %d
+issue_cmd - ERR - CMD_STOP, curr state: %d
+issue_cmd - ERR - CMD_RESET, curr state: %d
+issue_cmd - ERR - CMD_DE_ALLOC, curr state: %d
+issue_cmd - ERR - CMD_DB_STOP, curr state: %d
+issue_cmd - ERR - default cmd_type: %d
+issue_cmd - ISSUED
+set_gpii_evt_chan - ERR - GPII-%d no mem
+set_gpii_params - ERR - gpii-%d evt ring!
+gpii_init - ERR - register irq failed!
+gpii_init - ERR - gpii-%d not ready
+common_init - ERR - irq all fail!
+ISR ERROR! GPII: %d, irq_type: 0x%x, bmsk: 0x%x
+gpi_isr.c
+helper_evt - ERROR - invalid QUP: %d 
+helper_evt - ERROR - invalid GPII: %d 
+helper_evt - ERR - unexpected chan: %d
+ring_evts - ERR - unexpected chan: %d
+ring_evts - ERR - default: %d, code: %d, chan: %d
+get_ring_ptr - ERR - default: %d
+0123456789ABCDEFSuccess
+Warning Unknown Glyph
+Warning Delete Failure
+Warning Write Failure
+Warning Buffer Too Small
+Warning Stale Data
+Load Error
+Invalid Parameter
+Unsupported
+Bad Buffer Size
+Buffer Too Small
+Not Ready
+Device Error
+Write Protected
+Out of Resources
+Volume Corrupt
+Volume Full
+No Media
+Media changed
+Not Found
+Access Denied
+No Response
+No mapping
+Time out
+Not started
+Already started
+Aborted
+ICMP Error
+TFTP Error
+Protocol Error
+Incompatible Version
+Security Violation
+CRC Error
+End of Media
+Reserved (29)
+Reserved (30)
+End of File
+Invalid Language
+Compromised Data
+PrintLibInternal.c
+Width < 38
+(Flags & ~(0x01 | 0x08 | 0x20 | 0x80)) == 0
+((Flags & 0x08) == 0) || ((Flags & 0x80) == 0)
+(BufferSize <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+(BufferSize <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength) * sizeof (CHAR16) + 1)
+((Flags & ~(0x01 | 0x08 | 0x20 | 0x80)) == 0)
+(((Flags & 0x08) == 0) || ((Flags & 0x80) == 0))
+(Width < 38)
+(BufferSize >= (Width + 1) * Increment)
+(Format != ((void *) 0))
+(BufferSize <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+(StrnLenS ((CHAR16 *)Format, (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+(AsciiStrnLenS (Format, (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+<null string>
+<null guid>
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+<null time>
+%02d/%02d/%04d  %02d:%02d
+%08X
+SerialPort Lib
+IoLibArm.c
+(Address & 1) == 0
+(Address & 3) == 0
+(Address & 7) == 0
+UNKNOWN
+CDP (SURF)
+FLUID
+FUSION
+MTP_MDM
+LiQUID
+DragonBoard
+RUMI
+VIRTIO
+GOBI
+QcomLib.c
+Key != ((void *) 0)
+EnableLogFsSyncInRetail
+%d.%d
+Qualcomm Snapdragon 
+Qualcomm Snapdragon xxxxxxx
+ERROR: Memory Allocation failed !
+Unable to delete file
+Invalid parameters passed to GetUUID
+LocateProtocol: ChipInfo unsuccessful! status: %d
+Failed to get MSM serial number
+LocateProtocol: EfiHash2Protocol unsuccessful! status: %d
+GetHashSize unsuccessful! status: %d
+GetHashSize: DigestSize is not an expected value!
+HashInit unsuccessful! status: %d
+HashUpdate unsuccessful! status: %d
+HashFinal unsuccessful! status: %d
+Failed to get BlkIo handles
+Failed to get Card Info! status: %d
+ERROR: Could not allocate space for dump buffer
+WARNING: Could not find protocol to dump buffer
+ERROR: Failed to get debug log. Status = 0x%08x
+TZApp Log Buffer: (Size = %d)
+-- START -- 
+-- DONE -- 
+ReadKeyInternal: gEfiSimpleTextInputExProtocolGuid handles = %d
+ReadKeyInternal: Read KEY = 0x%x
+UEFI Config Lib
+DivU64x32Remainder.c
+Divisor != 0
+LinkedList.c
+List != ((void *) 0)
+List->ForwardLink != ((void *) 0)
+List->BackLink != ((void *) 0)
+InternalBaseLibIsListValid (FirstEntry)
+SecondEntry != ((void *) 0)
+ListHead != ((void *) 0)
+((BOOLEAN)(0==1)) == IsNodeInList ((ListHead), (Entry))
+InternalBaseLibIsListValid (ListHead)
+InternalBaseLibIsListValid (List)
+((BOOLEAN)(1==1)) == IsNodeInList ((List), (Node))
+((BOOLEAN)(1==1)) == IsNodeInList ((FirstEntry), (SecondEntry))
+!IsListEmpty (Entry)
+Unaligned.c
+MemoryAllocationLib.c
+Pages != 0
+RealPages > Pages
+Module cannot re-initialize DAL module environment
+DALModEnv.c
+pszFmt
+!EFI_ERROR (status)
+gpDALSYSInitFncPtr
+ERROR: Failed to Get Shared Imem Boot Device type 
+SharedIMEMBaseAddr
+OverRideSharedImemBootCfg
+p^fM
+nW	?m
+ir;a
+ir;"[N
+nW	?m
+NB10
+/home/work/violet-q-stable-build/vendor/qcom/non-hlos-2019-spf10/BOOT.XF.3.1/boot_images/Build/SDM6150LA_Core/RELEASE_CLANG40LINUX/AARCH64/QcomPkg/Drivers/GpiDxe/GpiDxe/DEBUG/GpiDxe.dll
