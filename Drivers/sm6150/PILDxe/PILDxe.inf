@@ -14,7 +14,7 @@
 
 [Binaries.AARCH64]
    DXE_DEPEX|PILDxe.depex|*
-   PE32|PILDxe.efi|*
+   PE32|PILDxe_Patched.efi|*
 
 [Depex]
   TRUE
