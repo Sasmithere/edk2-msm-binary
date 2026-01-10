@@ -12,10 +12,9 @@
   VERSION_STRING = 1.0
   ENTRY_POINT    = EfiEntry
 
-
 [Binaries.AARCH64]
    DXE_DEPEX|SdccDxe.depex|*
-   PE32|SdccDxe_fixed.efi|*
+   PE32|SdccDxe.efi|*
 
 [Depex]
   TRUE
